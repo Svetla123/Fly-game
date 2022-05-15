@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="fly.js"></script>
+    <link rel="stylesheet" href="fly.css" />
+  </head>
+  <body>
+    <div class="menu box-shadow">
+      <div>
+        Score:
+        <span id="score">0</span>
+      </div>
+      <div>
+        Time:
+        <span id="timer">0</span>
+      </div>
+    </div>
+    <div id="myFlys">
+      <!-- <div class="fly"></div> -->
+    </div>
+
+    <!-- finish modal -->
+    <div class="modal hidden" id="modalFinish">
+      <h2 class="modal__header">
+        The FlyGame 🐦 <br />
+        has finished!
+      </h2>
+      <form class="modal__form">
+        <label id="displayFlys"></label>
+        <label id="displayScore"></label>
+        <label id="displayTime"></label>
+        <button class="btn button-50" id="playAgain">Play again</button>
+      </form>
+    </div>
+    <!-- start modal -->
+    <div class="modal hidden" id="modalStart">
+      <h2 class="modal__header">
+        Welcome to <br />
+        The FlyGame 🐦
+      </h2>
+      <form class="modal__form">
+        <label>Flys:</label>
+        <input type="text" id="inputFlys" />
+        <label>Seconds:</label>
+        <input type="text" id="inputTime" />
+      </form>
+      <button class="btn button-50" id="buttonStart">Start</button>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
